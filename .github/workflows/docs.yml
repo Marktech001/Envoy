@@ -32,7 +32,7 @@ jobs:
     - name: Publish docs
       if: github.ref == 'refs/heads/main'
       run: mobile/docs/publish.sh
-    - uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@v5
       with:
         name: docs
         path: generated/docs
