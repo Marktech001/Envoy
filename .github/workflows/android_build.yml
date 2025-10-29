@@ -22,7 +22,7 @@ jobs:
         CC: /opt/llvm/bin/clang
         CXX: /opt/llvm/bin/clang++
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v5
       with:
         fetch-depth: 0
     - name: Add safe directory
@@ -48,7 +48,7 @@ jobs:
     runs-on: macos-12
     timeout-minutes: 50
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v5
       with:
         fetch-depth: 0
     - id: should_run
@@ -96,7 +96,7 @@ jobs:
     runs-on: macos-12
     timeout-minutes: 50
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v5
       with:
         fetch-depth: 0
     - id: should_run
@@ -144,7 +144,7 @@ jobs:
     runs-on: macos-12
     timeout-minutes: 50
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v5
       with:
         fetch-depth: 0
     - id: should_run
@@ -192,7 +192,7 @@ jobs:
     runs-on: macos-12
     timeout-minutes: 50
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v5
       with:
         fetch-depth: 0
     - id: should_run

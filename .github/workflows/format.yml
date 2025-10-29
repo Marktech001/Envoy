@@ -24,7 +24,7 @@ jobs:
         BUILDOZER_BIN: /usr/local/bin/buildozer
         ENVOY_BAZEL_PREFIX: "@envoy"
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v5
       with:
         fetch-depth: 0
     - name: Add safe directory
@@ -41,7 +41,7 @@ jobs:
     runs-on: macos-12
     timeout-minutes: 45
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v5
       with:
         fetch-depth: 0
     - id: should_run
@@ -61,7 +61,7 @@ jobs:
     container:
       image: ghcr.io/realm/swiftlint:0.50.3
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v5
     - name: 'Run Swift Lint (SwiftLint)'
       run: swiftlint lint --strict
       working-directory: mobile
@@ -71,7 +71,7 @@ jobs:
     runs-on: macos-12
     timeout-minutes: 10
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v5
       with:
         fetch-depth: 0
     - id: should_run
@@ -88,7 +88,7 @@ jobs:
     runs-on: macos-12
     timeout-minutes: 45
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v5
       with:
         fetch-depth: 0
     - id: should_run
