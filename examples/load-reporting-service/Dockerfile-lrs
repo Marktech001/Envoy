@@ -1,4 +1,4 @@
-FROM golang:1.20.1-bullseye@sha256:63ed3bc6b428713c2bb1980e534d70e8ab82a4484ec044183df9caca6e9d82cb as builder
+FROM golang:1.24.6-bullseye@sha256:2cdc80dc25edcb96ada1654f73092f2928045d037581fa4aa7c40d18af7dd85a as builder
 
 COPY ./server /go/src/github.com/envoyproxy/envoy/example/load-reporting-service/server
 COPY *.go /go/src/github.com/envoyproxy/envoy/example/load-reporting-service/
