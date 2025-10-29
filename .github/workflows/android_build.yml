@@ -64,7 +64,7 @@ jobs:
     - run: cd mobile && ./ci/mac_ci_setup.sh --android
       if: steps.should_run.outputs.run_ci_job == 'true'
       name: 'Install dependencies'
-    - uses: nick-fields/retry@943e742917ac94714d2f408a0e8320f2d1fcafcd
+    - uses: nick-fields/retry@ce71cc2ab81d554ebbe88c79ab5975992d79ba08
       if: steps.should_run.outputs.run_ci_job == 'true'
       name: 'Start emulator'
       with:
@@ -112,7 +112,7 @@ jobs:
     - name: 'Install dependencies'
       if: steps.should_run.outputs.run_ci_job == 'true'
       run: cd mobile && ./ci/mac_ci_setup.sh --android
-    - uses: nick-fields/retry@943e742917ac94714d2f408a0e8320f2d1fcafcd
+    - uses: nick-fields/retry@ce71cc2ab81d554ebbe88c79ab5975992d79ba08
       if: steps.should_run.outputs.run_ci_job == 'true'
       name: 'Start emulator'
       with:
@@ -160,7 +160,7 @@ jobs:
     - name: 'Install dependencies'
       if: steps.should_run.outputs.run_ci_job == 'true'
       run: cd mobile && ./ci/mac_ci_setup.sh --android
-    - uses: nick-fields/retry@943e742917ac94714d2f408a0e8320f2d1fcafcd
+    - uses: nick-fields/retry@ce71cc2ab81d554ebbe88c79ab5975992d79ba08
       if: steps.should_run.outputs.run_ci_job == 'true'
       name: 'Start emulator'
       with:
@@ -208,7 +208,7 @@ jobs:
     - name: 'Install dependencies'
       if: steps.should_run.outputs.run_ci_job == 'true'
       run: cd mobile && ./ci/mac_ci_setup.sh --android
-    - uses: nick-fields/retry@943e742917ac94714d2f408a0e8320f2d1fcafcd
+    - uses: nick-fields/retry@ce71cc2ab81d554ebbe88c79ab5975992d79ba08
       if: steps.should_run.outputs.run_ci_job == 'true'
       name: 'Start emulator'
       with:
