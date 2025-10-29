@@ -1,4 +1,4 @@
-FROM python:3.10.7-slim-bullseye@sha256:f2ee145f3bc4e061f8dfe7e6ebd427a410121495a0bd26e7622136db060c59e0 as shared-flask
+FROM python:3.13.6-slim-bullseye@sha256:e98b521460ee75bca92175c16247bdf7275637a8faaeb2bcfa19d879ae5c4b9a as shared-flask
 
 ENV DEBIAN_FRONTEND=noninteractive
 
