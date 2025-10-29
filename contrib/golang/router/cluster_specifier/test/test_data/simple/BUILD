@@ -16,7 +16,7 @@ go_binary(
     deps = [
         "//contrib/golang/router/cluster_specifier/source/go/pkg/api",
         "//contrib/golang/router/cluster_specifier/source/go/pkg/cluster_specifier",
-        "@com_github_cncf_xds_go//xds/type/v3:type",
+        "@com_github_cncf_xds_go//xds/type/v3:pkg_go_proto",
         "@org_golang_google_protobuf//types/known/anypb",
         "@org_golang_google_protobuf//types/known/structpb",
     ],
